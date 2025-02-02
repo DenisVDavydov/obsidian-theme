@@ -1,0 +1,12 @@
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
+    background-color: var(--file-color-color);
+    color: var(--text-normal);
+    opacity: 1; /* Полная непрозрачность */
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container :not(.mod-root) > .nav-folder-children > .nav-folder > :not(.nav-file-title).nav-folder-title {
+    background-color: var(--file-color-color); /* Фоновый цвет без полупрозрачности */
+    border-style: none; /* Удаление границы */
+    border-width: 0; /* Удаление ширины границы */
+    border-color: transparent; /* Удаление цвета границы */
+}

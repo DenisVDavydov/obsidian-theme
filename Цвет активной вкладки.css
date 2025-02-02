@@ -1,0 +1,9 @@
+ body {
+	--tab-background-active: #2D3440;
+    --tab-outline-color: #a3be8c;
+    --tab-font-size: 0.85em;
+}
+
+.workspace-tab-header.is-active {
+	font-weight: 500;
+}

@@ -1,0 +1,22 @@
+
+[data-callout^="n_"] .callout-title {color: #fff; padding: 15px 15px 18px 45px;}
+[data-callout^="n_"] .callout-icon {display: none;}
+[data-callout^="n_"] .callout-content {margin: 0 30px 0 20px; padding: 10px 0 20px 0; border-top: 1px dotted #fff; color: #fff;}
+[data-callout^="n_"] .callout-content p {margin: 0 !important; padding: 0 !important;}
+[data-callout^="n_"] hr {display: none;}
+
+[data-callout^="n_"] {border-radius: 10px; margin: 0 0 15px 0; padding: 0;}
+[data-callout="n_1"] {background: #bd5f68;}
+[data-callout="n_2"] {background: #3E4D61;}
+[data-callout="n_3"] {background: #526580;}
+[data-callout="n_4"] {background: #677F9E;}
+[data-callout="n_5"] {background: #869AB3;}
+
+[data-callout^="n_"] .callout-title:before {color: #fff; margin: -5px 1px 0 -25px; font-size: 20px; position: absolute;}
+[data-callout="n_1"] .callout-title:before {content: '▧';}
+[data-callout="n_2"] .callout-title:before {content: '▤';}
+[data-callout="n_3"] .callout-title:before {content: '◫';}
+[data-callout="n_4"] .callout-title:before {content: '◧';}
+[data-callout="n_5"] .callout-title:before {content: '◩';}
+
+[data-callout="cli_4"] .callout-content a, [data-callout="cli_5"] .callout-content a {color: #0D1117;}
