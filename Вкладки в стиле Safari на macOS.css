@@ -1,3 +1,4 @@
+/* Стили для светлой и тёмной темы */
 .theme-light {
     --tab-background: rgba(0, 0, 0, 0.05);
     --tab-background-active: rgba(0, 0, 0, 0.08);
@@ -7,14 +8,30 @@
     --tab-background-active: rgba(255, 255, 255, 0.1);
 }
 
+/* Контейнер для вкладок */
 .workspace-tab-header-container-inner {
     margin-bottom: 6px;
     gap: 8px;
     width: 100%;
 }
 
+/* Стили для вкладок разных типов файлов */
 .workspace-tab-header[data-type="markdown"],
-.workspace-tab-header[data-type="empty"] {
+.workspace-tab-header[data-type="txt"],
+.workspace-tab-header[data-type="pdf"],
+.workspace-tab-header[data-type="html"],
+.workspace-tab-header[data-type="xml"],
+.workspace-tab-header[data-type="csv"],
+.workspace-tab-header[data-type="jpeg"],
+.workspace-tab-header[data-type="jpg"],
+.workspace-tab-header[data-type="png"],
+.workspace-tab-header[data-type="gif"],
+.workspace-tab-header[data-type="bmp"],
+.workspace-tab-header[data-type="webp"],
+.workspace-tab-header[data-type="tiff"],
+.workspace-tab-header[data-type="svg"],
+.workspace-tab-header[data-type="ai"],
+.workspace-tab-header[data-type="eps"] {
     max-width: 100% !important;
     border-radius: 6px;
     padding: 0 !important;
@@ -24,12 +41,28 @@
     transition: flex-grow 0.25s ease-in-out !important;
 }
 
+/* Активные вкладки */
 .workspace-tab-header[data-type="markdown"].is-active.mod-active,
-.workspace-tab-header[data-type="empty"].is-active.mod-active {
+.workspace-tab-header[data-type="txt"].is-active.mod-active,
+.workspace-tab-header[data-type="pdf"].is-active.mod-active,
+.workspace-tab-header[data-type="html"].is-active.mod-active,
+.workspace-tab-header[data-type="xml"].is-active.mod-active,
+.workspace-tab-header[data-type="csv"].is-active.mod-active,
+.workspace-tab-header[data-type="jpeg"].is-active.mod-active,
+.workspace-tab-header[data-type="jpg"].is-active.mod-active,
+.workspace-tab-header[data-type="png"].is-active.mod-active,
+.workspace-tab-header[data-type="gif"].is-active.mod-active,
+.workspace-tab-header[data-type="bmp"].is-active.mod-active,
+.workspace-tab-header[data-type="webp"].is-active.mod-active,
+.workspace-tab-header[data-type="tiff"].is-active.mod-active,
+.workspace-tab-header[data-type="svg"].is-active.mod-active,
+.workspace-tab-header[data-type="ai"].is-active.mod-active,
+.workspace-tab-header[data-type="eps"].is-active.mod-active {
     background-color: var(--tab-background-active);
     flex-grow: 2 !important;
 }
 
+/* Убираем псевдоэлементы */
 .workspace-tab-header-inner::after {
     display: none;
 }
@@ -39,6 +72,7 @@
     display: none;
 }
 
+/* Кнопка закрытия вкладки */
 .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button {
     display: none;
 }
@@ -46,6 +80,13 @@
     display: flex;
 }
 
+/* Скрытие списка вкладок */
 .workspace-tab-header-tab-list {
     display: none !important;
 }
+
+/* Скрыть кнопку новая вкладка */
+.workspace-tab-header-new-tab {
+    display: none !important;
+}
+
